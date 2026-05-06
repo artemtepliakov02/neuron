@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="icon" type="image/svg+xml" href="/src/images/logo/favicon.svg" />
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="stylesheet" href="/src/css/contact.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="index.html" class="logo" aria-label="neuron">
+          <img src="src/images/logo/logo-black.svg" alt="logo" />
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About us</a>
+          <a href="news.html">News</a>
+          <a href="#price">Price</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <button class="burger" aria-label="Open menu" aria-expanded="false">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile nav -->
+    <div class="nav-overlay" aria-hidden="true">
+      <button class="nav-overlay__close" aria-label="Close menu"></button>
+      <nav class="nav-overlay__nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About us</a>
+        <a href="news.html">News</a>
+        <a href="#price">Price</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Banner -->
+    <section class="banner banner--interior" aria-label="Contact">
+      <div class="banner__inner">
+        <img
+          class="banner__bg"
+          src="src/images/img/Contact-banner.webp"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="banner__overlay" aria-hidden="true"></div>
+        <div class="banner__content">
+          <h1 class="banner__title">Contact</h1>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- Contact info cards -->
+      <section class="section" aria-label="Contact info">
+        <div class="contact-cards">
+          <div class="contact-info-card">
+            <div class="contact-info-card__header">
+              <img
+                src="src/images/svg/PhoneOutgoing.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <h4>Call us.</h4>
+            </div>
+            <p>+57 00 846 679 225</p>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-card__header">
+              <img
+                src="src/images/svg/MapPinSimple.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <h4>Visit us.</h4>
+            </div>
+            <p>C/ Fake Street, 5, 2B</p>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-card__header">
+              <img
+                src="src/images/svg/Envelope.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <h4>Write us.</h4>
+            </div>
+            <p>info@neuron.com</p>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-card__header">
+              <img
+                src="src/images/svg/ChatCenteredDots.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <h4>Chat with us.</h4>
+            </div>
+            <p>
+              <a href="#">Click here to open the chat</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map + Contact Form -->
+      <section class="section section--no-pt" aria-labelledby="contact-title">
+        <div class="split">
+          <div class="contact__image contact__image--map">
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0d239939f176da66e82613f1fe516ea8ba90147407e3e7f37f4f988796c2b055&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
+          </div>
+          <div class="contact__form-wrap">
+            <div class="contact__form-title">
+              <h2 id="contact-title">Contact with us</h2>
+              <p>
+                You can also check other ways to contact us on the
+                <a href="#">contact page</a>.
+              </p>
+            </div>
+            <form class="form-fields" action="#" method="post" novalidate>
+              <div class="form-row">
+                <input
+                  class="field"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                />
+                <input
+                  class="field"
+                  type="text"
+                  name="surname"
+                  placeholder="Surname"
+                />
+              </div>
+              <input
+                class="field"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <div class="field-select-wrapper">
+                <select class="field-select" name="select">
+                  <option value="value1" selected disabled>
+                    Select the service
+                  </option>
+                  <option value="value1">Web development</option>
+                  <option value="value2">App development</option>
+                  <option value="value3">Neuhost</option>
+                  <option value="value4">Neuron Studio</option>
+                  <option value="value5">WordPress</option>
+                  <option value="value6">UX/UI</option>
+                </select>
+              </div>
+              <div class="checkbox-row">
+                <input type="checkbox" id="privacy" name="privacy" />
+                <label for="privacy"
+                  >I have read and accept the
+                  <a href="privacy-policy.html">privacy policy</a></label
+                >
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">
+                Send
+                <img
+                  src="src/images/svg/ArrowUpRightWhite.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="price" class="section" aria-label="Pricing">
+        <div class="pricing">
+          <div class="price-card price-card--light">
+            <div class="price-card__top">
+              <p class="price-card__name">Basic Plan</p>
+              <p class="price-card__price">99€</p>
+              <a href="#" class="btn btn--dark btn--full"
+                >Try it for free
+                <img
+                  src="src/images/svg/ArrowUpRightWhite.svg"
+                  alt=""
+                  aria-hidden="true"
+              /></a>
+            </div>
+            <ul class="price-card__features">
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>UX/UI</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>WordPress</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>Customized panel</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>Neuhost access</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>Neuron Studio</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>Web development</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>App development</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>SEO/SEM</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price-card price-card--dark">
+            <div class="price-card__top">
+              <p class="price-card__name">Pro Plan</p>
+              <p class="price-card__price">129€</p>
+              <a href="#" class="btn btn--light btn--full"
+                >Try it for free
+                <img
+                  src="src/images/svg/ArrowUpRight.svg"
+                  alt=""
+                  aria-hidden="true"
+              /></a>
+            </div>
+            <ul class="price-card__features">
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckWhite.svg" alt="✓" /></span
+                ><span>UX/UI</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckWhite.svg" alt="✓" /></span
+                ><span>WordPress</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckWhite.svg" alt="✓" /></span
+                ><span>Customized panel</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckWhite.svg" alt="✓" /></span
+                ><span>Neuhost access</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckWhite.svg" alt="✓" /></span
+                ><span>Neuron Studio</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>Web development</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>App development</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>SEO/SEM</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price-card price-card--light">
+            <div class="price-card__top">
+              <p class="price-card__name">Xtreme Plan</p>
+              <p class="price-card__price">199€</p>
+              <a href="#" class="btn btn--dark btn--full"
+                >Try it for free
+                <img
+                  src="src/images/svg/ArrowUpRightWhite.svg"
+                  alt=""
+                  aria-hidden="true"
+              /></a>
+            </div>
+            <ul class="price-card__features">
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>UX/UI</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>WordPress</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>Customized panel</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>Neuhost access</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>Neuron Studio</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>Web development</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>App development</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>SEO/SEM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <a href="index.html" class="logo" aria-label="neuron">
+            <img src="src/images/logo/logo-light.svg" alt="logo" />
+          </a>
+          <nav class="footer__socials" aria-label="Social media">
+            <a href="#" aria-label="Social 1"
+              ><img src="src/images/svg/InstagramLogo.svg" alt=""
+            /></a>
+            <a href="#" aria-label="Social 2"
+              ><img src="src/images/svg/XLogo.svg" alt=""
+            /></a>
+            <a href="#" aria-label="Social 3"
+              ><img src="src/images/svg/PinterestLogo.svg" alt=""
+            /></a>
+            <a href="#" aria-label="Social 4"
+              ><img src="src/images/svg/LinkedinLogo.svg" alt=""
+            /></a>
+          </nav>
+        </div>
+        <nav class="footer__links" aria-label="Legal">
+          <a href="legal-notice.html">Legal Notice</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="cookies-policy.html">Cookies Policy</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>

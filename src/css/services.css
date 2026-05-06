@@ -1,0 +1,19 @@
+/* Services grid (wrap layout) */
+.services-grid--wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px 0;
+  width: 100%;
+}
+.services-grid--wrap .service-card {
+  flex: 1 0 320px;
+  max-width: calc(50% - 8px);
+}
+
+@media (max-width: 480px) {
+  .services-grid--wrap .service-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

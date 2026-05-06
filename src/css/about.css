@@ -1,0 +1,20 @@
+/* Quote section */
+.quote-section {
+  max-width: var(--container-max);
+  width: 100%;
+  display: flex;
+}
+.quote-section__text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.quote-section h4 {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-medium);
+}
+.quote-section p {
+  font-size: var(--fs-body);
+}

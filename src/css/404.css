@@ -1,0 +1,60 @@
+/* 404 error section */
+.error-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px - 120px);
+  padding: var(--section-py) var(--section-px);
+  background: var(--color-light);
+}
+.error-section__inner {
+  border-radius: var(--radius-card);
+  width: 100%;
+  max-width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 16px;
+}
+.error-section__content {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+}
+.error-code {
+  font-family: var(--font-heading);
+  font-size: 120px;
+  font-weight: var(--fw-regular);
+  line-height: 1;
+}
+.error-body {
+  font-size: var(--fs-body);
+}
+.error-buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.btn--outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 32px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  border: 1px solid var(--color-dark);
+  color: var(--color-dark);
+  background: transparent;
+}
+.btn--outline img {
+  width: 18px;
+  height: 18px;
+}

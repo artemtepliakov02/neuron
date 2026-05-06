@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="icon" type="image/svg+xml" href="/src/images/logo/favicon.svg" />
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="stylesheet" href="/src/css/news.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="index.html" class="logo" aria-label="neuron">
+          <img src="src/images/logo/logo-black.svg" alt="logo" />
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About us</a>
+          <a href="news.html" class="active">News</a>
+          <a href="#price">Price</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="burger" aria-label="Open menu" aria-expanded="false">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile nav -->
+    <div class="nav-overlay" aria-hidden="true">
+      <button class="nav-overlay__close" aria-label="Close menu"></button>
+      <nav class="nav-overlay__nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About us</a>
+        <a href="news.html" class="active">News</a>
+        <a href="#price">Price</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Banner -->
+    <section class="banner banner--interior" aria-label="News">
+      <div class="banner__inner">
+        <img
+          class="banner__bg"
+          src="src/images/img/News-banner.webp"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="banner__overlay" aria-hidden="true"></div>
+        <div class="banner__content">
+          <h1 class="banner__title">News</h1>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- Posts grid -->
+      <section class="section" aria-label="News posts">
+        <div class="posts-wrap">
+          <div class="posts-grid">
+            <article class="post-card">
+              <div class="post-card__image">
+                <img
+                  src="src/images/img/News-1.webp"
+                  alt="The Ultimate Guide to Digital Transformation for Small Businesses"
+                />
+              </div>
+              <h4>The Ultimate Guide to Digital Transformation for Small...</h4>
+              <p>
+                Embracing digital transformation is essential for small
+                businesses seeking growth and resilience...
+              </p>
+              <a href="single-post.html" class="post-card__link">Read more</a>
+            </article>
+
+            <article class="post-card">
+              <div class="post-card__image">
+                <img
+                  src="src/images/img/News-2.webp"
+                  alt="Why Cloud Solutions Are the Backbone of Modern Enterprises"
+                />
+              </div>
+              <h4>
+                Why Cloud Solutions Are the Backbone of Modern Enterprises
+              </h4>
+              <p>
+                Cloud technologies offer flexibility, security, and scalability
+                for all types of organizations. Learn how cloud solutions...
+              </p>
+              <a href="single-post.html" class="post-card__link">Read more</a>
+            </article>
+
+            <article class="post-card">
+              <div class="post-card__image">
+                <img
+                  src="src/images/img/News-3.webp"
+                  alt="Automate to Innovate: How Workflow Automation Boosts Productivity"
+                />
+              </div>
+              <h4>Automate to Innovate: How Workflow Automation Boosts...</h4>
+              <p>
+                Implementing workflow automation helps eliminate repetitive
+                tasks and human error. Explore key automation tools and...
+              </p>
+              <a href="single-post.html" class="post-card__link">Read more</a>
+            </article>
+
+            <article class="post-card">
+              <div class="post-card__image">
+                <img
+                  src="src/images/img/News-4.webp"
+                  alt="Data-Driven Decisions: Leveraging Analytics in Your Company"
+                />
+              </div>
+              <h4>
+                Data-Driven Decisions: Leveraging Analytics in Your Company
+              </h4>
+              <p>
+                Transform your business with data-driven insights that guide
+                smarter decision-making. See how adopting analytics...
+              </p>
+              <a href="single-post.html" class="post-card__link">Read more</a>
+            </article>
+
+            <article class="post-card">
+              <div class="post-card__image">
+                <img
+                  src="src/images/img/News-5.webp"
+                  alt="Cybersecurity Essentials Every Business Should Know"
+                />
+              </div>
+              <h4>Cybersecurity Essentials Every Business Should Know</h4>
+              <p>
+                Protecting your digital assets is critical in a connected world.
+                Uncover the most important cybersecurity practices...
+              </p>
+              <a href="single-post.html" class="post-card__link">Read more</a>
+            </article>
+
+            <article class="post-card">
+              <div class="post-card__image">
+                <img
+                  src="src/images/img/News-6.webp"
+                  alt="Remote Work Revolution: Tools and Tips for Seamless Collaboration"
+                />
+              </div>
+              <h4>Remote Work Revolution: Tools and Tips for Seamless...</h4>
+              <p>
+                Remote work is here to stay, and with the right tools, your team
+                can thrive from anywhere.
+              </p>
+              <a href="single-post.html" class="post-card__link">Read more</a>
+            </article>
+
+            <article class="post-card">
+              <div class="post-card__image">
+                <img
+                  src="src/images/img/News-7.webp"
+                  alt="From Paper to Pixel: Digitizing Your Business Processes"
+                />
+              </div>
+              <h4>From Paper to Pixel: Digitizing Your Business Processes</h4>
+              <p>
+                Transitioning from manual to digital processes reduces errors
+                and accelerates workflows.
+              </p>
+              <a href="single-post.html" class="post-card__link">Read more</a>
+            </article>
+
+            <article class="post-card">
+              <div class="post-card__image">
+                <img
+                  src="src/images/img/News-8.webp"
+                  alt="Customer Experience in the Digital Age: Best Practices to Stand Out"
+                />
+              </div>
+              <h4>
+                Customer Experience in the Digital Age: Best Practices to Stand
+                Out
+              </h4>
+              <p>
+                Digital tools allow you to personalize and enhance customer
+                interactions. Learn how to deliver outstanding...
+              </p>
+              <a href="single-post.html" class="post-card__link">Read more</a>
+            </article>
+
+            <article class="post-card">
+              <div class="post-card__image">
+                <img
+                  src="src/images/img/News-9.webp"
+                  alt="Overcoming the Challenges of Digital Adoption in Traditional Industries"
+                />
+              </div>
+              <h4>
+                Overcoming the Challenges of Digital Adoption in Traditional...
+              </h4>
+              <p>
+                Adopting new technologies can be daunting for established
+                industries. Explore practical solutions for managing
+                resistance...
+              </p>
+              <a href="single-post.html" class="post-card__link">Read more</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="price" class="section" aria-label="Pricing">
+        <div class="pricing">
+          <div class="price-card price-card--light">
+            <div class="price-card__top">
+              <p class="price-card__name">Basic Plan</p>
+              <p class="price-card__price">99€</p>
+              <a href="#" class="btn btn--dark btn--full"
+                >Try it for free
+                <img
+                  src="src/images/svg/ArrowUpRightWhite.svg"
+                  alt=""
+                  aria-hidden="true"
+              /></a>
+            </div>
+            <ul class="price-card__features">
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>UX/UI</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>WordPress</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>Customized panel</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>Neuhost access</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>Neuron Studio</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>Web development</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>App development</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>SEO/SEM</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price-card price-card--dark">
+            <div class="price-card__top">
+              <p class="price-card__name">Pro Plan</p>
+              <p class="price-card__price">129€</p>
+              <a href="#" class="btn btn--light btn--full"
+                >Try it for free
+                <img
+                  src="src/images/svg/ArrowUpRight.svg"
+                  alt=""
+                  aria-hidden="true"
+              /></a>
+            </div>
+            <ul class="price-card__features">
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckWhite.svg" alt="✓" /></span
+                ><span>UX/UI</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckWhite.svg" alt="✓" /></span
+                ><span>WordPress</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckWhite.svg" alt="✓" /></span
+                ><span>Customized panel</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckWhite.svg" alt="✓" /></span
+                ><span>Neuhost access</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckWhite.svg" alt="✓" /></span
+                ><span>Neuron Studio</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>Web development</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>App development</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/xCircle.svg" alt="✗" /></span
+                ><span>SEO/SEM</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price-card price-card--light">
+            <div class="price-card__top">
+              <p class="price-card__name">Xtreme Plan</p>
+              <p class="price-card__price">199€</p>
+              <a href="#" class="btn btn--dark btn--full"
+                >Try it for free
+                <img
+                  src="src/images/svg/ArrowUpRightWhite.svg"
+                  alt=""
+                  aria-hidden="true"
+              /></a>
+            </div>
+            <ul class="price-card__features">
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>UX/UI</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>WordPress</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>Customized panel</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>Neuhost access</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>Neuron Studio</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>Web development</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>App development</span>
+              </li>
+              <li class="price-feature">
+                <span class="price-feature__icon"
+                  ><img src="src/images/svg/CheckCircle.svg" alt="✓" /></span
+                ><span>SEO/SEM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <a href="index.html" class="logo" aria-label="neuron">
+            <img src="src/images/logo/logo-light.svg" alt="logo" />
+          </a>
+          <nav class="footer__socials" aria-label="Social media">
+            <a href="#" aria-label="Social 1"
+              ><img src="src/images/svg/InstagramLogo.svg" alt=""
+            /></a>
+            <a href="#" aria-label="Social 2"
+              ><img src="src/images/svg/XLogo.svg" alt=""
+            /></a>
+            <a href="#" aria-label="Social 3"
+              ><img src="src/images/svg/PinterestLogo.svg" alt=""
+            /></a>
+            <a href="#" aria-label="Social 4"
+              ><img src="src/images/svg/LinkedinLogo.svg" alt=""
+            /></a>
+          </nav>
+        </div>
+        <nav class="footer__links" aria-label="Legal">
+          <a href="legal-notice.html">Legal Notice</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="cookies-policy.html">Cookies Policy</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>

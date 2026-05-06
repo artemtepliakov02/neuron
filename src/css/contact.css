@@ -1,0 +1,55 @@
+/* Contact info cards */
+.contact-cards {
+  max-width: var(--container-max);
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+.contact-info-card {
+  flex: 1 1 0;
+  min-width: 0;
+  background: var(--color-light);
+  border-radius: var(--radius-card);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contact-info-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.contact-info-card__header img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.contact-info-card__header h4 {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-medium);
+}
+.contact-info-card p {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+}
+.contact-info-card p a {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-cards {
+    flex-wrap: wrap;
+  }
+  .contact-info-card {
+    flex: 1 1 calc(50% - 8px);
+    max-width: calc(50% - 8px);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
